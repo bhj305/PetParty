@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.petsparty.springboot.notice.INoticeService">
+	<select id="getNoticeTotalCount" resultType="int"
+		parameterType="com.petsparty.springboot.notice.NoticeDTO">
+		SELECT count(*) FROM board WHERE category = 'notice'
+	</select>
+	
+	<select id="selectAllNotice" resultType="com.petsparty.springboot.notice.NoticeDTO"
+		parameterType="com.petsparty.springboot.notice.NoticeDTO">
+		SELECT * FROM (
+			SELECT Tb.*, rownum rNum FROM (
+				SELECT * FROM 
+					board
+			    WHERE category = 'notice'
+			    ORDER BY board_id DESC
+			) Tb
+		)
+		WHERE rNum<![CDATA[>=]]>#{start} AND rNum<![CDATA[<=]]>#{end}
+	</select>
+	
+	<insert id="insertNotice" parameterType="com.petsparty.springboot.notice.NoticeDTO">
+		INSERT INTO board (board_id, category, title, writer, content, created_date, view_count)
+		VALUES
+		(RESERVATION_SEQ.nextval,'notice', #{title}, #{writer}, #{content}, sysdate, 0)
+	</insert>
+	
+	<select id="selectedNotice" resultType="com.petsparty.springboot.notice.NoticeDTO"
+		parameterType="com.petsparty.springboot.notice.NoticeDTO">
+		SELECT * FROM board WHERE board_id = #{board_id}
+	</select>
+	
+	<update id="incresingViewCount" parameterType="com.petsparty.springboot.notice.NoticeDTO">
+		UPDATE board SET
+		view_count = #{view_count}+1
+		WHERE board_id = #{board_id}
+	</update>
+</mapper>

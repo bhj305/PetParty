@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.petsparty.springboot.reserve.IReserveService">
+	<insert id="insertReservation" parameterType="com.petsparty.springboot.reserve.ReserveDTO">
+		INSERT INTO RESERVATION (RESERVATION_ID, NAME, PHONE, PET_NAME, PET_TYPE, check_in_date, CHECK_OUT_DATE, MEMO, CREATED_AT)
+		VALUES
+		(RESERVATION_SEQ.nextval, #{name}, #{phone}, #{pet_name} , #{pet_type} , #{check_in_date}, #{check_out_date} , #{memo} ,sysdate)
+	</insert>
+	
+	<select id="selectMyReservation" resultType="com.petsparty.springboot.reserve.ReserveDTO"
+		parameterType="com.petsparty.springboot.reserve.ReserveDTO">
+		SELECT RESERVATION_ID, NAME, PHONE, PET_NAME, PET_TYPE, CHECK_IN_DATE, CHECK_OUT_DATE, CREATED_AT, MEMO FROM reservation 
+			WHERE name = #{name} AND phone = #{phone}
+	</select>
+</mapper>

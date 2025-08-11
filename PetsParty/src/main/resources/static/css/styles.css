@@ -1,0 +1,233 @@
+/* bookingMain.jsp */
+body {
+    font-family: 'Baloo 2', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f7f1;
+    margin: 0; padding: 0;
+    color: #5a4636;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fffaf3;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(90, 62, 43, 0.2);
+    border: 1px solid #e2c9a6;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8b5e3c;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d2b48c;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #d2b48c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b58962;
+}
+
+
+/* link.jsp */
+.top-nav {
+    background-color: #f4e1c6; /* 따뜻한 베이지 */
+    border-bottom: 2px solid #d2b48c; /* 연갈색 테두리 */
+    display: flex;
+    align-items: center;
+    font-family: 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+}
+
+.logo {
+    height: 50px; /* 로고 크기 */
+    margin-right: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5a3e2b; /* 진한 갈색 글자 */
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #d2b48c; /* 연갈색 호버 */
+    color: white;
+}
+
+/* sidebar.jsp */
+.sub-navbar {
+  background-color: #f5f0e6;  /* 베이지톤 */
+  border-bottom: 2px solid #7a5c3e; /* 진한 갈색 밑줄 */
+  padding: 10px 20px;
+}
+
+.sub-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.sub-navbar ul li a {
+  color: #7a5c3e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sub-navbar ul li a:hover,
+.sub-navbar ul li a.active {
+  text-decoration: underline;
+  color: #4a3a1a;
+}
+
+
+footer {
+    background-color: #d9c9b7;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #6b4f3f;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+  header {
+      background-color: #d9c9b7;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 28px;
+      color: #6b4f3f;
+  }
+nav a {
+    text-decoration: none;
+    color: #6b4f3f;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #a37c5b;
+}
+main {
+    max-width: 960px;
+    margin: 40px auto;
+    text-align: center;
+}
+main img {
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+main h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #7a5d47;
+}
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6b5843;
+}
+body {
+    background-color: #fdf6ec;
+    font-family: 'Arial Rounded MT Bold', 'Segoe UI', sans-serif;
+    color: #5a3e2b;
+    margin: 0;
+    padding: 0;
+}
+.notice-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fffaf3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(90, 62, 43, 0.15);
+    border: 1px solid #e2c9a6;
+}
+table.notice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.notice-table th {
+    background-color: #f4e1c6;
+    text-align: left;
+    padding: 10px;
+    width: 20%;
+    border-bottom: 1px solid #e2c9a6;
+}
+table.notice-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e2c9a6;
+    background-color: #fffaf3;
+}
+.notice-content {
+    padding: 20px;
+    line-height: 1.6;
+    white-space: pre-line;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e2c9a6;
+    margin-top: 10px;
+}
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background-color: #d2b48c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.btn-back:hover {
+    background-color: #b58962;
+}
