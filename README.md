@@ -10,7 +10,9 @@
 
 [예약 확인 페이지]
 <img width="1437" height="640" alt="image" src="https://github.com/user-attachments/assets/cc597f89-c468-4d36-b87f-84627df23c94" />
+[예약 확인 페이지] - 예약이 없는 경우
 <img width="1437" height="640" alt="image" src="https://github.com/user-attachments/assets/1c0deafb-f14b-4958-bfaf-4641e8dd356c" />
+[예약 확인 페이지] - 예약이 있는 경우
 <img width="1277" height="680" alt="image" src="https://github.com/user-attachments/assets/eaa69e34-6f84-4bd6-bbad-2b053093fa6a" />
 
 
