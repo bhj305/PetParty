@@ -11,3 +11,6 @@
 [예약 확인 페이지]
 <img width="1437" height="640" alt="image" src="https://github.com/user-attachments/assets/cc597f89-c468-4d36-b87f-84627df23c94" />
 <img width="1437" height="640" alt="image" src="https://github.com/user-attachments/assets/1c0deafb-f14b-4958-bfaf-4641e8dd356c" />
+
+[공지사항 페이지]
+<img width="1282" height="682" alt="image" src="https://github.com/user-attachments/assets/0e1e9057-b9e6-4eff-93c9-5ea7d8daa855" />
