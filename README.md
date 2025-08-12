@@ -14,3 +14,6 @@
 
 [공지사항 페이지]
 <img width="1282" height="682" alt="image" src="https://github.com/user-attachments/assets/0e1e9057-b9e6-4eff-93c9-5ea7d8daa855" />
+
+[공지사항 작성 페이지]
+<img width="1277" height="680" alt="image" src="https://github.com/user-attachments/assets/bc85e743-ab56-40a5-8e9f-bfd50672c98c" />
